@@ -28,7 +28,7 @@ export class AppComponent {
   }
 
   sanitizerFunc(lat, lng){
-    return this.sanitizer.bypassSecurityTrustResourceUrl("http://maps.google.com/maps?q=" + lat + "," + lng + "&z=4&output=embed");
+    return this.sanitizer.bypassSecurityTrustResourceUrl("https://maps.google.com/maps?q=" + lat + "," + lng + "&z=4&output=embed");
   }
 
   randomCoords(){
