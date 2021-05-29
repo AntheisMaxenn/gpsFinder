@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+}
+
+.mapRow {
+    margin-top: 50px;
+    iframe {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+
+.inputRow {
+    .lng,
+    .lat {
+        height: 36px;
+        margin: 0 20px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+button {
+    margin-top: 30px;
+    height: 36px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #C5E8C5;
+    cursor: pointer;
+}
+
+.randomBtn {
+    margin-right: 50px;
+    background-color: lightcoral;
+}

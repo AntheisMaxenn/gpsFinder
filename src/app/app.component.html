@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="title">
+        <h1>GPS Finder</h1>
+    </div>
+    <div class="inputRow">
+
+        <div class="row">
+            <p>Lattitude (-90 | 90)</p><input (keyup.enter)="changePin()" [(ngModel)]='lattitude' class="lat">
+        </div>
+
+        <div class="row">
+            <p>longitude (-180 | 180)</p><input (keyup.enter)="changePin()" [(ngModel)]='longitude' class="lng">
+        </div>
+
+        <button class="randomBtn" (click)="randomCoords()">Random</button>
+        <button class="goBtn" (keyup.enter)="changePin()" (click)="changePin()">GO</button>
+
+    </div>
+
+    <div class="mapRow">
+        <iframe [src]="safeUrl" height="600" width="1400"></iframe>
+    </div>
+
+
+</div>
